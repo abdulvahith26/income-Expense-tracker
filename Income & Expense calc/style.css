@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black; 
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    color: white; 
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #b8860b ;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center; /* Center the content */
+}
+
+.totals .card {
+    width: 32%;
+    background: linear-gradient(135deg, #434343, #000000);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.totals .card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.totals .card p {
+    font-size: 2.5rem; 
+    font-weight: 900;  
+    margin: 0;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: calc(100% / 4 - 10px);
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 128, 255, 0.3);
+}
+
+form button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 150px;
+    height: auto;
+}
+
+form button:hover {
+    background-color: black;
+    color: #b8860b;
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 0 15px rgba(2, 2, 0, 0.7); /* Glow effect */
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 20px;
+    font-weight: bold;
+    color: #000000; 
+    cursor: pointer;
+}
+
+.filters input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+#entries-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#entries-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#entries-list li:hover {
+    background-color: #050000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .totals {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    form input, form select, form button {
+        width: 100%;
+    }
+
+    #entries-list li {
+        flex-direction: column;
+    }
+}
+button {
+    background-color: goldenrod;
+    width: 55px;
+    height: 25px;
+    border: none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+}
